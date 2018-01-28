@@ -16,6 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <meta-data android:name="net.hockeyapp.android.appIdentifier" android:value="${HOCKEYAPP_APP_ID}" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="caee8526e7101ec1f5327185d71e091fca5921eb" />
     </application>
 
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
