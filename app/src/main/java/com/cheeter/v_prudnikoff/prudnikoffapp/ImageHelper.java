@@ -11,6 +11,8 @@ import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.Rect;
 import android.graphics.RectF;
+import android.util.Log;
+
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -51,7 +53,7 @@ class ImageHelper {
             InputStream inputStream = assetManager.open(fileName);
             bitmap = BitmapFactory.decodeStream(inputStream);
         } catch (IOException ex) {
-            ex.printStackTrace();
+            Log.e("bitmap", "exception: " + ex.getMessage());
         }
         return bitmap;
     }
